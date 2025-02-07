@@ -15,7 +15,7 @@ This API takes a number as input and returns interesting mathematical properties
 
 ## 🏗️ Technology Stack
 - **Python 3.x**
-- **Flask** (Web framework)
+- **FastAPI** (Web framework)
 - **Flask-CORS** (For handling CORS)
 - **Requests** (For fetching fun facts from the Numbers API)
 
