@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  flask-api:
+    build: .
+    container_name: flask-api
+    ports:
+      - "5000:5000"  # Mapping port 5000 from the container to port 5000 on the host
+    volumes:
+      - .:/app  # Mount the current directory to the container for live updates (optional in production)
+    environment:
+      - FLASK_APP=app/app.py  # Environment variable for Flask
+      - FLASK_RUN_HOST=0.0.0.0  # Allows the Flask app to be accessed externally
+      - FLASK_ENV=production  # Set to production for production environment
+    networks:
+      - devops-network  # Custom network to isolate the application
+
+networks:
+  devops-network:
+    driver: bridge  # Use a bridge network to allow container communication
