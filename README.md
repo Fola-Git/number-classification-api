@@ -105,5 +105,5 @@ This API can be deployed on:
 ## 👨‍💻 Author
 Developed by **STARR**  
 LinkedIn: [Folashade Oroge](https://linkedin.com/in/folashadeoluwaseun)  
-GitHub: [Your GitHub](https://github.com/Fola-Giit)
+GitHub: [Fola-Git](https://github.com/Fola-Giit)
 
